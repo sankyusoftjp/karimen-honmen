@@ -1,109 +1,149 @@
 <!DOCTYPE html>
-border-radius: 10px;
-font-weight: 600;
-transition: background 0.2s ease;
-}
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KariHonmen – Karimen & Honmen</title>
+    <meta name="description"
+        content="Prepare for Japan Driver License Tests (Karimen & Honmen). Free, Offline, Multilingual." />
 
-.button:hover {
-background: #1e40af;
-}
-
-
-footer {
-text-align: center;
-padding: 24px 20px;
-color: var(--muted);
-font-size: 0.9rem;
-}
-
-
-@media (max-width: 600px) {
-header h1 {
-font-size: 1.8rem;
-}
-}
-</style>
+    <link rel="stylesheet" href="css/common.css">
 </head>
+
 <body>
 
+    <header>
+        <h1>KariHonmen – Karimen & Honmen</h1>
+        <p>Prepare for Japan Driver License Tests • Free • Offline • Multilingual</p>
+        <div class="lang-selector">
+            <select id="langDropdown" onchange="switchLang(this.value)" aria-label="Select Language">
+                <option value="ja">🇯🇵 日本語</option>
+                <option value="en" selected>🇬🇧 English</option>
+                <option value="zh">🇨🇳 中文</option>
+                <option value="ko">🇰🇷 한국어</option>
+                <option value="id">🇮🇩 Bahasa Indonesia</option>
+                <option value="ne">🇳🇵 नेपाली</option>
+                <option value="pt">🇵🇹 Português</option>
+            </select>
+        </div>
+    </header>
 
-<header>
-<h1>KariHonmen – Karimen & Honmen</h1>
-<p>Prepare for Japan Driver License Tests • Free • Offline • Multilingual</p>
-</header>
+    <main>
 
+        <section class="section">
+            <h2>About the App</h2>
 
-<main>
+            <div class="card">
+                <div id="lang-ja" class="lang-block">
+                    日本の運転免許試験（仮免・本免）対策アプリ。無料・オフライン対応で、実際の試験形式に沿った問題を学習できます。
+                </div>
+                <div id="lang-en" class="lang-block active">
+                    An app to help you prepare for Japan driver’s license exams (Karimen & Honmen). Free, offline, and
+                    easy to use.
+                </div>
+                <div id="lang-zh" class="lang-block">
+                    帮助您准备日本驾驶执照考试（假考与正考）的学习应用，支持离线使用。
+                </div>
+                <div id="lang-ko" class="lang-block">
+                    일본 운전면허 시험(가리멘·혼멘)을 준비하기 위한 무료 오프라인 학습 앱입니다.
+                </div>
+                <div id="lang-id" class="lang-block">
+                    Aplikasi gratis untuk persiapan ujian SIM Jepang, dapat digunakan secara offline.
+                </div>
+                <div id="lang-ne" class="lang-block">
+                    जापान ड्राइभर लाइसेन्स परीक्षा तयारीका लागि निःशुल्क र अफलाइन एप।
+                </div>
+                <div id="lang-pt" class="lang-block">
+                    Aplicativo gratuito para se preparar para os exames de habilitação no Japão, com suporte offline.
+                </div>
+            </div>
+        </section>
 
-
-<section class="section">
-<h2>About the App</h2>
-<div class="card">
-<div class="lang">
-<div class="lang-title">🇯🇵 日本語</div>
-日本の運転免許試験（仮免・本免）対策アプリ。無料・オフライン対応で、実際の試験形式に沿った問題を学習できます。
-</div>
-<div class="lang">
-<div class="lang-title">🇺🇸 English</div>
-An app to help you prepare for Japan driver’s license exams (Karimen & Honmen). Free, offline, and easy to use.
-</div>
-<div class="lang">
-<div class="lang-title">🇨🇳 中文</div>
-帮助您准备日本驾驶执照考试（假考与正考）的学习应用，支持离线使用。
-</div>
-<div class="lang">
-<div class="lang-title">🇰🇷 한국어</div>
-일본 운전면허 시험(가리멘·혼멘)을 준비하기 위한 무료 오프라인 학습 앱입니다.
-</div>
-<div class="lang">
-<div class="lang-title">🇮🇩 Bahasa Indonesia</div>
-Aplikasi gratis untuk persiapan ujian SIM Jepang, dapat digunakan secara offline.
-</div>
-<div class="lang">
-<div class="lang-title">🇳🇵 नेपाली</div>
-जापान ड्राइभर लाइसेन्स परीक्षा तयारीका लागि निःशुल्क र अफलाइन एप।
-</div>
-<div class="lang">
-<div class="lang-title">🇵🇹 Português</div>
-Aplicativo gratuito para se preparar para os exames de habilitação no Japão, com suporte offline.
-</div>
-</div>
-</section>
-
-
-<section class="section">
-<h2>Key Features</h2>
-<div class="card">
-<ul>
-<li>Mock tests based on real Karimen & Honmen exams</li>
-<li>Offline support – study anytime, anywhere</li>
-<li>Instant results and answer review</li>
-<li>Multiple languages supported</li>
-<li>Simple and beginner‑friendly UI</li>
-</ul>
-</div>
-</section>
-
-
-<section class="section">
-<h2>Download</h2>
-<div class="card">
-<div class="buttons">
-<a class="button" href="https://play.google.com/store/apps/details?id=com.sankyusoft.jpdriverlicense" target="_blank">Google Play</a>
-<a class="button" href="https://apps.apple.com/us/app/karihonmen-karimen-honmen/id6738203046" target="_blank">App Store</a>
-</div>
-</div>
-</section>
+        <section class="section">
+            <h2>App Preview</h2>
+            <div class="card">
+                <div class="preview-section">
+                    <div class="slider-wrapper">
+                        <div class="slider" id="slider">
+                            <div class="slide"><img src="screenshots/ss1.png"></div>
+                            <div class="slide"><img src="screenshots/ss2.png"></div>
+                            <div class="slide"><img src="screenshots/ss3.png"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
-</main>
+        <section class="section">
+            <h2>Key Features</h2>
+            <div class="card">
+                <ul>
+                    <li>Mock tests based on real Karimen & Honmen exams</li>
+                    <li>Offline support – study anytime, anywhere</li>
+                    <li>Instant results and answer review</li>
+                    <li>Multiple languages supported</li>
+                    <li>Simple and beginner-friendly UI</li>
+                </ul>
+            </div>
+        </section>
 
+        <section class="section">
+            <h2>Download</h2>
+            <div class="card">
+                <div class="buttons">
+                    <a class="button"
+                        href="https://play.google.com/store/apps/details?id=com.sankyusoft.jpdriverlicense"
+                        target="_blank">Google Play</a>
+                    <a class="button" href="https://apps.apple.com/us/app/karihonmen-karimen-honmen/id6738203046"
+                        target="_blank">App Store</a>
+                </div>
+            </div>
+        </section>
 
-<footer>
-© 2026 KariHonmen • sankyusoft@gmail.com
-</footer>
+        <section class="section">
+            <h2>Legal</h2>
+            <div class="card">
+                <p>
+                    <a href="privacy.html" target="_blank">Privacy Policy</a> ·
+                    <a href="terms.html" target="_blank">Terms of Service</a>
+                </p>
+            </div>
+        </section>
 
+    </main>
+
+    <footer>
+        © 2026 KariHonmen • sankyusoft@gmail.com
+    </footer>
+
+    <script src="js/images.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let lang = 'en';
+            try {
+                const saved = localStorage.getItem('karihonmen-lang');
+                if (saved) {
+                    lang = saved;
+                } else {
+                    // Detect browser language
+                    const browserLang = navigator.language || navigator.userLanguage;
+                    const langCode = browserLang.split('-')[0]; // Get 'ja' from 'ja-JP'
+                    const supportedLangs = ['ja', 'en', 'zh', 'ko', 'id', 'ne', 'pt'];
+                    if (supportedLangs.includes(langCode)) {
+                        lang = langCode;
+                    }
+                }
+            } catch (e) { }
+            switchLang(lang);
+            const dropdown = document.getElementById('langDropdown');
+            if (dropdown) dropdown.value = lang;
+        });
+    </script>
 
 </body>
+
 </html>
+            
