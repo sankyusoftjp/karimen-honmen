@@ -10,7 +10,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -175,6 +176,8 @@ footer {
     scrollbar-width: none;
     gap: 12px;
     padding: 20px;
+    padding-left: 20px;
+    scroll-padding-left: 20px;
     touch-action: pan-y pan-x pinch-zoom;
     overscroll-behavior-x: contain;
     overscroll-behavior-y: auto;
@@ -187,21 +190,19 @@ footer {
 .slide {
     flex-shrink: 0;
     width: 260px;
-    scroll-snap-align: center;
+    scroll-snap-align: start;
     scroll-snap-stop: always;
 }
 
 .slide img {
     width: 100%;
     height: auto;
-    aspect-ratio: 9 / 16;
-    object-fit: cover;
     border-radius: 22px;
     display: block;
     pointer-events: none;
     user-select: none;
     -webkit-user-drag: none;
-    box-shadow: 
+    box-shadow:
         0 4px 12px rgba(0, 0, 0, 0.1),
         0 2px 4px rgba(0, 0, 0, 0.06);
 }
@@ -209,22 +210,50 @@ footer {
 /* Desktop specific */
 @media (min-width: 768px) {
     .slider-wrapper {
-        margin: 0;
+        /* max-width: 900px; */
+        margin: 0 0;
+        overflow: visible;
+        /* Thay vì hidden */
     }
-    
+
     .slider {
         padding: 20px 0;
-        justify-content: center;
+        cursor: grab;
+        /* Thêm cursor để biết có thể kéo */
     }
-    
+
+    .slider:active {
+        cursor: grabbing;
+    }
+
     .slide {
         width: 280px;
     }
-    
-    /* Show 3 slides on desktop */
-    .slider-wrapper {
-        max-width: 900px;
-        margin: 0 auto;
+
+    /* Hiển thị scrollbar trên desktop */
+    .slider::-webkit-scrollbar {
+        display: block !important;
+        height: 8px;
+    }
+
+    .slider::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+    }
+
+    .slider::-webkit-scrollbar-thumb {
+        background: var(--primary);
+        border-radius: 10px;
+    }
+
+    .slider::-webkit-scrollbar-thumb:hover {
+        background: #018c7d;
+    }
+
+    .slider {
+        scrollbar-width: thin !important;
+        /* Firefox */
+        scrollbar-color: var(--primary) #f1f1f1;
     }
 }
 

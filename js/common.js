@@ -1,18 +1,20 @@
-  function switchLang(lang) {
-    const blocks = document.querySelectorAll('.lang-block');
-    blocks.forEach(b => b.classList.remove('active'));
+function switchLang(lang) {
+  const blocks = document.querySelectorAll('.lang-block');
+  blocks.forEach(b => b.classList.remove('active'));
 
-    const active = document.getElementById('lang-' + lang);
-    if (active) active.classList.add('active');
+  const active = document.getElementById('lang-' + lang);
+  if (active) active.classList.add('active');
 
-    const buttons = document.querySelectorAll('.lang-flags button');
-    buttons.forEach(btn => btn.classList.remove('active'));
+  const buttons = document.querySelectorAll('.lang-flags button');
+  buttons.forEach(btn => btn.classList.remove('active'));
 
-    const btn = document.querySelector('.lang-flags button[onclick="switchLang(\'' + lang + '\')"]');
-    if (btn) btn.classList.add('active');
-
-    try {
-      localStorage.setItem('karihonmen-lang', lang);
-    } catch (e) {}
+  const btn = document.querySelector('.lang-flags button[onclick="switchLang(\'' + lang + '\')"]');
+  if (btn) btn.classList.add('active');
+  // Load images for selected language
+  if (typeof window.loadImagesForLanguage === 'function') {
+    window.loadImagesForLanguage(lang);
   }
-
+  try {
+    localStorage.setItem('karihonmen-lang', lang);
+  } catch (e) { }
+}
