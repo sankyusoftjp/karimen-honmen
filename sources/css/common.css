@@ -70,11 +70,6 @@ main {
     margin-bottom: 12px;
 }
 
-.lang-title {
-    font-weight: 600;
-    margin-bottom: 6px;
-}
-
 ul {
     padding-left: 20px;
 }
@@ -111,46 +106,6 @@ footer {
     header h1 {
         font-size: 1.8rem;
     }
-}
-
-.lang-block {
-    display: none;
-}
-
-.lang-block.active {
-    display: block;
-}
-
-.lang-flags {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 12px;
-    flex-wrap: wrap;
-}
-
-.lang-flags button {
-    border: none;
-    background: transparent;
-    padding: 0;
-    cursor: pointer;
-    opacity: 0.6;
-    transition: opacity 0.2s;
-}
-
-.lang-flags button.active,
-.lang-flags button:hover {
-    opacity: 1;
-}
-
-.lang-flags button.active {
-    outline: 2px solid var(--primary);
-    border-radius: 6px;
-}
-
-.lang-flags img {
-    width: 32px;
-    height: auto;
-    border-radius: 4px;
 }
 
 /* Apple-style Slider */
