@@ -2,45 +2,52 @@
 const IMAGE_CONFIG = {
   ja: {
     count: 12,
-    prefix: 'images/ja/',
+    prefix: '../sources/images/ja/',
     width: 1320,  // Adjust to your actual image dimensions
-    height: 2868
+    height: 2868,
+    alt: "日本の運転免許学科試験アプリ「KariHonmen」の画面"
   },
   en: {
     count: 12,
-    prefix: 'images/en/',
+    prefix: '../sources/images/en/',
     width: 1320,
-    height: 2868
+    height: 2868,
+    alt: "KariHonmen – Japan driver license test app screenshot"
   },
   zh: {
     count: 12,
-    prefix: 'images/zh/',
+    prefix: '../sources/images/zh/',
     width: 1320,
-    height: 2868
+    height: 2868,
+    alt: "KariHonmen 日本驾照理论考试应用界面截图"
   },
   ko: {
     count: 12,
-    prefix: 'images/ko/',
+    prefix: '../sources/images/ko/',
     width: 1320,
-    height: 2868
+    height: 2868,
+    alt: "일본 운전면허 필기시험 앱 KariHonmen 화면"
   },
   id: {
     count: 12,
-    prefix: 'images/id/',
+    prefix: '../sources/images/id/',
     width: 1320,
-    height: 2868
+    height: 2868,
+    alt: "Tampilan aplikasi KariHonmen untuk latihan ujian SIM Jepang"
   },
   ne: {
     count: 12,
-    prefix: 'images/ne/',
+    prefix: '../sources/images/ne/',
     width: 1320,
-    height: 2868
+    height: 2868,
+    alt: "जापान ड्राइभर लाइसेन्स परीक्षा अभ्यास एप KariHonmen को स्क्रिन"
   },
   pt: {
     count: 12,
-    prefix: 'images/pt/',
+    prefix: '../sources/images/pt/',
     width: 1320,
-    height: 2868
+    height: 2868,
+    alt: "Tela do aplicativo KariHonmen para teste da carteira de motorista japonesa"
   }
 };
 
@@ -92,7 +99,7 @@ for (let i = 1; i <= config.count; i++) {
     if (imageObserver) imageObserver.observe(img);
   }
 
-  img.alt = `KariHonmen app screenshot ${i} (${lang})`;
+  img.alt = `${config.alt}`;
   img.width = config.width;
   img.height = config.height;
   img.style.width = '100%';
