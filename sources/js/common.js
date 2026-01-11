@@ -1,12 +1,19 @@
 function switchLang(lang) {
     console.log('Setting language to:', lang);
+
+    // local env
     if (location.protocol === 'file:') {
         location.href = '../' + lang + '/index.html';
+        return;
     }
+
     // server / github pages
-    else {
-        location.href = '/' + lang + '/';
-    }
+    let pathname = location.pathname;
+    pathname = pathname.replace(/^(\/([^\/]+)\/)?(en|ja|zh|ko|id|ne|pt|vi)(\/|$)/, (match, p1, repo, oldLang, slash) => {
+        return repo ? `/${repo}/${lang}/` : `/${lang}/`;
+    });
+
+    window.location.pathname = pathname;
 }
 
 document.addEventListener('DOMContentLoaded', function () {
