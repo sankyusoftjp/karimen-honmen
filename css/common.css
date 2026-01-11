@@ -115,7 +115,6 @@ footer {
 
 .lang-block {
     display: none;
-    margin-top: 12px;
 }
 
 .lang-block.active {
@@ -207,6 +206,33 @@ footer {
         0 2px 4px rgba(0, 0, 0, 0.06);
 }
 
+.store-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    /* khoảng cách giữa 2 nút */
+    flex-wrap: nowrap;
+}
+
+.store-btn img {
+    height: 56px;
+    width: auto;
+    display: block;
+}
+
+.store-btn {
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.store-btn:hover {
+    transform: translateY(-2px);
+}
+
+.store-btn:active {
+    transform: scale(0.97);
+}
+
 /* Desktop specific */
 @media (min-width: 768px) {
     .slider-wrapper {
@@ -269,4 +295,22 @@ footer {
     .slide {
         width: 240px;
     }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .store-btn img {
+        height: 60px;
+        /* to hơn cho mobile */
+    }
+}
+
+@media (max-width: 480px) {
+  .store-btn img {
+    height: 50px;        /* nhỏ hơn để fit 1 dòng */
+  }
+
+  .store-buttons {
+    gap: 6px;
+  }
 }
