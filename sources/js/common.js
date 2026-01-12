@@ -8,12 +8,13 @@ function switchLang(lang) {
     }
 
     // server / github pages
-    let pathname = location.pathname;
-    pathname = pathname.replace(/^(\/([^\/]+)\/)?(en|ja|zh|ko|id|ne|pt|vi)(\/|$)/, (match, p1, repo, oldLang, slash) => {
-        return repo ? `/${repo}/${lang}/` : `/${lang}/`;
-    });
+    const supportedLangs = ['en', 'ja', 'zh', 'ko', 'id', 'ne', 'pt', 'vi'];
 
-    window.location.pathname = pathname;
+    let pathname = location.pathname;
+    const regex = new RegExp(`^/(${supportedLangs.join('|')})(?=/|$)`);
+    pathname = pathname.replace(regex, `/${lang}`);
+
+    location.pathname = pathname;
 }
 
 document.addEventListener('DOMContentLoaded', function () {
