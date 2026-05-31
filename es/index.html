@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- ===== TITLE ===== -->
-    <title>KariHonmen｜仮免・本免・外免切替 試験対策アプリ【外国人向け】</title>
+    <title>KariHonmen – Examen de Licencia de Conducir en Japon | Karimen, Honmen y Conversion</title>
 
-    <!-- ===== CANONICAL ===== -->
-    <link rel="canonical" href="https://www.karihonmen.com/ja/" />
+    <link rel="canonical" href="https://www.karihonmen.com/es/" />
 
-    <!-- ===== HREFLANG ===== -->
+    <!-- hreflang -->
     <link rel="alternate" hreflang="ja" href="https://www.karihonmen.com/ja/" />
     <link rel="alternate" hreflang="en" href="https://www.karihonmen.com/en/" />
     <link rel="alternate" hreflang="zh" href="https://www.karihonmen.com/zh/" />
@@ -26,26 +24,25 @@
     <link rel="alternate" hreflang="my" href="https://www.karihonmen.com/my/" />
     <link rel="alternate" hreflang="x-default" href="https://www.karihonmen.com/en/" />
 
-    <!-- ===== META DESCRIPTION ===== -->
-    <meta name="description" content="KariHonmenは外国人向けの仮免・本免・外免切替試験対策アプリ。多言語対応・オフライン学習可能。" />
+    <meta name="description"
+        content="KariHonmen ayuda a los extranjeros a prepararse para los examenes de licencia de conducir en Japon, incluyendo Karimen, Honmen y conversion de licencia. Soporte offline y multilenguaje." />
 
-    <!-- ===== META KEYWORDS (optional) ===== -->
-    <meta name="keywords" content="仮免 試験, 本免 試験, 外免切替, 運転免許 試験 日本, 外国人 運転免許" />
+    <meta name="keywords"
+        content="licencia de conducir Japon, examen Karimen, examen Honmen, conversion de licencia Japon, examen de manejo Japon, extranjeros examen de conducir Japon" />
 
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow">
 
-    <!-- ===== OPEN GRAPH ===== -->
-    <meta property="og:locale" content="ja_JP" />
+    <link rel="stylesheet" href="../sources/css/common.css">
+
+    <!-- ===== OPEN GRAPH (ES) ===== -->
+    <meta property="og:locale" content="es_ES" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="KariHonmen｜仮免・本免・外免切替 試験対策アプリ" />
-    <meta property="og:description" content="外国人向けの運転免許試験対策アプリ。仮免・本免・外免切替に対応。" />
+    <meta property="og:title" content="KariHonmen – Karimen, Honmen y App de Examen de Licencia en Japon" />
+    <meta property="og:description"
+        content="Practica los examenes de Karimen, Honmen y conversion de licencia en Japon. App multilenguaje para extranjeros." />
     <meta property="og:image" content="https://www.karihonmen.com/og-image.png">
-    <meta property="og:url" content="https://www.karihonmen.com/ja/" />
+    <meta property="og:url" content="https://www.karihonmen.com/es/" />
 
-    <!-- ===== CSS ===== -->
-    <link rel="stylesheet" href="../sources/css/common.css" />
-
-    <!-- ===== STRUCTURED DATA ===== -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -53,7 +50,7 @@
       "name": "KariHonmen – Karimen & Honmen",
       "operatingSystem": "Android, iOS",
       "applicationCategory": "EducationApplication",
-      "description": "仮免・本免・外免切替の運転免許試験対策アプリ。外国人向け・多言語対応。",
+      "description": "Preparate para los examenes de licencia de conducir en Japon, incluyendo Karimen, Honmen y conversion de licencia.",
       "offers": {
         "@type": "Offer",
         "price": "0",
@@ -70,12 +67,12 @@
 
 <body>
     <header>
-        <h1>KariHonmen｜仮免・本免・外免切替 試験対策</h1>
-        <p>日本の仮免・本免・外免切替試験を練習できます</p>
+        <h1>KariHonmen – Karimen & Honmen</h1>
+        <p>Practica examenes de Karimen, Honmen y conversion de licencia en Japon</p>
         <div class="lang-selector">
-            <select id="langDropdown" onchange="switchLang(this.value)" aria-label="言語を選択">
+            <select id="langDropdown" onchange="switchLang(this.value)" aria-label="Seleccionar idioma">
                 <option value="ja">🇯🇵 日本語</option>
-                <option value="en" selected>🇬🇧 English</option>
+                <option value="en">🇬🇧 English</option>
                 <option value="zh">🇨🇳 中文</option>
                 <option value="ko">🇰🇷 한국어</option>
                 <option value="id">🇮🇩 Bahasa Indonesia</option>
@@ -83,7 +80,7 @@
                 <option value="pt">🇵🇹 Português</option>
                 <option value="hi">🇮🇳 हिन्दी</option>
                 <option value="fil">🇵🇭 Filipino</option>
-                <option value="es">🇪🇸 Español</option>
+                <option value="es" selected>🇪🇸 Español</option>
                 <option value="my">🇲🇲 မြန်မာ</option>
                 <option value="vi">🇻🇳 Tiếng Việt</option>
             </select>
@@ -107,19 +104,18 @@
 
         <!-- ------------------------About the App ----------------------- -->
         <section class="section">
-            <h2>アプリ紹介</h2>
+            <h2>Sobre la App</h2>
             <div class="card">
                 <p>
-                    <strong>KariHonmen – Karimen & Honmen</strong> は、
-                    <strong>日本の自動車運転免許試験</strong>に向けた学習をサポートするアプリです。
-                    <strong>仮免</strong>、<strong>本免</strong>、および
-                    <strong>外免切替</strong>に対応しています。
+                    <strong>KariHonmen – Karimen & Honmen</strong> es una aplicacion disenada para ayudarte a prepararte para
+                    los <strong>examenes de licencia de conducir de automovil en Japon</strong>, incluyendo
+                    <strong>Karimen (仮免)</strong>, <strong>Honmen (本免)</strong> y
+                    <strong>conversion de licencia (外免切替)</strong>.
                 </p>
                 <p>
-                    <strong>シンプルで使いやすいデザイン</strong>で、
-                    アカウント登録は不要です。
-                    アプリを開くだけですぐに学習を始められます。
-                    また、<strong>オフライン学習</strong>にも対応しています。
+                    La app tiene una <strong>interfaz simple y facil de usar</strong> y no requiere registro de cuenta.
+                    Solo abre la app y comienza a estudiar de inmediato.
+                    Tambien permite <strong>estudio offline</strong>, para que puedas aprender en cualquier momento y lugar.
                 </p>
             </div>
         </section>
@@ -127,7 +123,7 @@
 
         <!-- ------------------------App Preview ----------------------- -->
         <section class="section">
-            <h2>アプリのプレビュー</h2>
+            <h2>Vista Previa de la App</h2>
 
             <div class="card">
                 <div class="preview-section">
@@ -141,24 +137,24 @@
         </section>
 
         <section class="section">
-            <h2>対応言語</h2>
+            <h2>Idiomas Compatibles</h2>
             <div class="card">
                 <p>
-                    KariHonmen は、日本で生活・勤務する外国人の方に向けて、複数の言語に対応しています。
+                    KariHonmen admite varios idiomas, ideal para extranjeros que viven y trabajan en Japon:
                 </p>
                 <ul>
-                    <li>🇯🇵 日本語</li>
-                    <li>🇬🇧 英語</li>
-                    <li>🇳🇵 ネパール語</li>
-                    <li>🇮🇩 インドネシア語</li>
-                    <li>🇵🇹 ポルトガル語</li>
-                    <li>🇨🇳 中国語</li>
-                    <li>🇰🇷 韓国語</li>
-                    <li>🇮🇳 ヒンディー語</li>
-                    <li>🇵🇭 フィリピノ語</li>
-                    <li>🇪🇸 スペイン語</li>
-                    <li>🇲🇲 ビルマ語</li>
-                    <li>🇻🇳 ベトナム語</li>
+                    <li>🇯🇵 Japones</li>
+                    <li>🇬🇧 Ingles</li>
+                    <li>🇳🇵 Nepali</li>
+                    <li>🇮🇩 Indonesio</li>
+                    <li>🇵🇹 Portugues</li>
+                    <li>🇨🇳 Chino</li>
+                    <li>🇰🇷 Coreano</li>
+                    <li>🇮🇳 Hindi</li>
+                    <li>🇵🇭 Filipino</li>
+                    <li>🇪🇸 Español</li>
+                    <li>🇲🇲 Birmano</li>
+                    <li>🇻🇳 Vietnamita</li>
                 </ul>
             </div>
 
@@ -166,32 +162,31 @@
 
         <!-- ------------------------Highlights ----------------------- -->
         <section class="section">
-            <h2>アプリの特長</h2>
+            <h2>Destacados</h2>
             <div class="card">
                 <ul>
                     <li>
-                        <strong>豊富な問題数：</strong>
-                        <strong>仮免10回分</strong>、
-                        <strong>本免10回分</strong>、
-                        <strong>外免切替20回分</strong>を収録し、
-                        試験対策を万全に行えます。
+                        <strong>Amplio banco de preguntas:</strong>
+                        Incluye <strong>10 tests de Karimen</strong>,
+                        <strong>10 tests de Honmen</strong> y
+                        <strong>20 tests de conversion de licencia</strong> para prepararte completamente.
                     </li>
                     <li>
-                        <strong>実際の試験に近い内容：</strong>
-                        最新の日本の試験内容をもとに、
-                        実際の受験者の体験を参考に作成されています。
+                        <strong>Basado en contenido real del examen:</strong>
+                        Las preguntas se crean con base en los examenes japoneses mas recientes
+                        y en comentarios de personas que ya presentaron el examen.
                     </li>
                     <li>
-                        <strong>多くのユーザーから高評価：</strong>
-                        当社の学習アプリは
-                        App Store と Google Play にて
-                        <strong>約10,000件の★5評価</strong>を獲得しています
-                        （ベトナム語版 Tiktak を含む）。
+                        <strong>Confiado por los usuarios:</strong>
+                        Nuestras apps de preparacion han recibido
+                        <strong>casi 10.000 resenas de cinco estrellas</strong> en
+                        App Store y Google Play
+                        (incluyendo la version vietnamita de Tiktak).
                     </li>
                     <li>
-                        <strong>効率よく学習：</strong>
-                        さまざまな学習サポート機能により、
-                        短時間で効果的に学べます。
+                        <strong>Estudia de forma mas inteligente:</strong>
+                        Las herramientas inteligentes integradas te ayudan
+                        a ahorrar tiempo y mejorar la eficiencia del aprendizaje.
                     </li>
                 </ul>
             </div>
@@ -200,22 +195,22 @@
 
         <!-- ------------------------Key Feature ----------------------- -->
         <section class="section">
-            <h2>主な機能</h2>
+            <h2>Funciones Principales</h2>
             <div class="card">
                 <ul>
                     <li>
-                        <strong>本番さながらの模擬試験：</strong>
-                        制限時間付きのテストで、
-                        実際の試験に近い感覚を体験できます。
+                        <strong>Simulacion de examen real:</strong>
+                        Realiza tests simulados con temporizador regresivo,
+                        igual que en el examen real.
                     </li>
                     <li>
-                        <strong>即時結果表示：</strong>
-                        提出後すぐに結果を確認できます。
+                        <strong>Resultados instantaneos:</strong>
+                        Ve los resultados inmediatamente despues de enviar el test.
                     </li>
                     <li>
-                        <strong>間違えた問題を復習：</strong>
-                        間違えた問題だけを重点的に練習でき、
-                        効率的に学習できます。
+                        <strong>Revision de respuestas incorrectas:</strong>
+                        Revisa y practica facilmente solo las preguntas que respondiste mal,
+                        para estudiar de forma mas eficiente.
                     </li>
                 </ul>
             </div>
@@ -224,7 +219,7 @@
 
         <!-- ------------------------Download & Legal ----------------------- -->
         <section class="section">
-            <h2>ダウンロード</h2>
+            <h2>Descargar</h2>
             <div class="card">
                 <div class="store-buttons">
                     <a class="store-btn google-play"
@@ -243,12 +238,12 @@
         </section>
 
         <section class="section">
-            <h2>法的情報</h2>
+            <h2>Legal</h2>
             <div class="card">
                 <p>
-                    <a href="../privacy-policy/karihonmen-pp.html" target="_blank">プライバシーポリシー</a>
+                    <a href="../privacy-policy/karihonmen-pp.html" target="_blank">Politica de Privacidad</a>
                 <div class="separator"></div>
-                <a href="../tos/karihonmen-tos.html" target="_blank">利用規約</a>
+                <a href="../tos/karihonmen-tos.html" target="_blank">Terminos del Servicio</a>
                 </p>
             </div>
         </section>

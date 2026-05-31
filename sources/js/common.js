@@ -8,7 +8,7 @@ function switchLang(lang) {
     }
 
     // server / github pages
-    const supportedLangs = ['en', 'ja', 'zh', 'ko', 'id', 'ne', 'pt', 'vi'];
+    const supportedLangs = ['en', 'ja', 'zh', 'ko', 'id', 'ne', 'pt', 'vi', 'hi', 'fil', 'es', 'my'];
 
     let pathname = location.pathname;
     const regex = new RegExp(`^/(${supportedLangs.join('|')})(?=/|$)`);
@@ -37,8 +37,8 @@ document.addEventListener('DOMContentLoaded', function () {
 function detectLangFromPath() {
     const path = window.location.pathname;
 
-    // match /vi/, /en/, /ja/, ...
-    const match = path.match(/\/(en|ja|zh|ko|id|ne|pt|vi)(\/|$)/);
+    // match /vi/, /en/, /ja/, /hi/, /fil/, /es/, /my/, ...
+    const match = path.match(/\/(en|ja|zh|ko|id|ne|pt|vi|hi|fil|es|my)(\/|$)/);
 
     if (match) {
         return match[1];

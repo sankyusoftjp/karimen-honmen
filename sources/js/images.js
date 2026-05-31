@@ -14,6 +14,34 @@ const IMAGE_CONFIG = {
     height: 2868,
     alt: "KariHonmen – Japan driver license test app screenshot"
   },
+  hi: {
+    count: 12,
+    prefix: '../sources/images/en/',
+    width: 1320,
+    height: 2868,
+    alt: "KariHonmen – जापान ड्राइविंग लाइसेंस परीक्षा ऐप स्क्रीनशॉट"
+  },
+  fil: {
+    count: 12,
+    prefix: '../sources/images/en/',
+    width: 1320,
+    height: 2868,
+    alt: "KariHonmen – screenshot ng app para sa Japan driver license test"
+  },
+  es: {
+    count: 12,
+    prefix: '../sources/images/en/',
+    width: 1320,
+    height: 2868,
+    alt: "KariHonmen – captura de pantalla de la app para el examen de licencia de conducir en Japon"
+  },
+  my: {
+    count: 12,
+    prefix: '../sources/images/en/',
+    width: 1320,
+    height: 2868,
+    alt: "KariHonmen – ဂျပန်ယာဉ်မောင်းလိုင်စင် စာမေးပွဲအတွက် app screenshot"
+  },
   zh: {
     count: 12,
     prefix: '../sources/images/zh/',
