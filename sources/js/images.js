@@ -1,81 +1,88 @@
 // Image configuration for each language
 const IMAGE_CONFIG = {
   ja: {
-    count: 12,
+    count: 10,
     prefix: '../sources/images/ja/',
     width: 1320,  // Adjust to your actual image dimensions
     height: 2868,
     alt: "日本の運転免許学科試験アプリ「KariHonmen」の画面"
   },
   en: {
-    count: 12,
+    count: 10,
     prefix: '../sources/images/en/',
     width: 1320,
     height: 2868,
     alt: "KariHonmen – Japan driver license test app screenshot"
   },
   hi: {
-    count: 12,
-    prefix: '../sources/images/en/',
+    count: 10,
+    prefix: '../sources/images/hi/',
     width: 1320,
     height: 2868,
     alt: "KariHonmen – जापान ड्राइविंग लाइसेंस परीक्षा ऐप स्क्रीनशॉट"
   },
   fil: {
-    count: 12,
-    prefix: '../sources/images/en/',
+    count: 10,
+    prefix: '../sources/images/fil/',
     width: 1320,
     height: 2868,
     alt: "KariHonmen – screenshot ng app para sa Japan driver license test"
   },
   es: {
-    count: 12,
-    prefix: '../sources/images/en/',
+    count: 10,
+    prefix: '../sources/images/es/',
     width: 1320,
     height: 2868,
     alt: "KariHonmen – captura de pantalla de la app para el examen de licencia de conducir en Japon"
   },
   my: {
-    count: 12,
-    prefix: '../sources/images/en/',
+    count: 10,
+    prefix: '../sources/images/my/',
     width: 1320,
     height: 2868,
     alt: "KariHonmen – ဂျပန်ယာဉ်မောင်းလိုင်စင် စာမေးပွဲအတွက် app screenshot"
   },
   zh: {
-    count: 12,
+    count: 10,
     prefix: '../sources/images/zh/',
     width: 1320,
     height: 2868,
     alt: "KariHonmen 日本驾照理论考试应用界面截图"
   },
   ko: {
-    count: 12,
+    count: 10,
     prefix: '../sources/images/ko/',
     width: 1320,
     height: 2868,
     alt: "일본 운전면허 필기시험 앱 KariHonmen 화면"
   },
   id: {
-    count: 12,
+    count: 10,
     prefix: '../sources/images/id/',
     width: 1320,
     height: 2868,
     alt: "Tampilan aplikasi KariHonmen untuk latihan ujian SIM Jepang"
   },
   ne: {
-    count: 12,
+    count: 10,
     prefix: '../sources/images/ne/',
     width: 1320,
     height: 2868,
     alt: "जापान ड्राइभर लाइसेन्स परीक्षा अभ्यास एप KariHonmen को स्क्रिन"
   },
   pt: {
-    count: 12,
+    count: 10,
     prefix: '../sources/images/pt/',
     width: 1320,
     height: 2868,
     alt: "Tela do aplicativo KariHonmen para teste da carteira de motorista japonesa"
+  },
+    vi: {
+    count: 13,
+    prefix: '../sources/images/vi/',
+    width: 1320,
+    height: 2868,
+    alt: "tiktak - ứng dụng luyện thi bằng lái xe tại Nhật Bản"
   }
 };
 
